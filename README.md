@@ -67,64 +67,6 @@ For each contiguous support region:
 
 Result: a sparse atomic measure representing structural anomalies.
 
-------------------------------------------------------------------------
-
-## Parameters
-
-  Parameter           Role                    Interpretation
-  ------------------- ----------------------- ---------------------------
-  BACKGROUND_WINDOW   Background resolution   Coarse-graining scale
-  EVENT_WINDOW        Impulse separation      Minimum singular distance
-  K                   Threshold multiplier    Support sensitivity
-  EPS                 Regularization          Numerical stability
-
-------------------------------------------------------------------------
-
-## Example Dataset
-
-Tested on:
-
-CICIDS traffic dataset\
-Friday-WorkingHours-Morning.pcap_ISCX.csv\
-Feature used: "Flow Bytes/s"
-
-------------------------------------------------------------------------
-
-## Installation
-
-pip install pandas numpy matplotlib scipy
-
-------------------------------------------------------------------------
-
-## Run
-
-python singular_measure_model.py
-
-------------------------------------------------------------------------
-
-## Why This Approach Is Different
-
-Traditional anomaly detection: - Learns a predictive model - Flags
-statistical outliers
-
-This approach: - Decomposes signal into continuous and singular
-components - Makes resolution explicit - Avoids model training - Is
-mathematically interpretable
-
-Closer to measure decomposition than classification.
-
-------------------------------------------------------------------------
-
-## Research Directions
-
--   Cumulative event intensity process Λ(t)
--   Multi-scale decomposition hierarchy
--   Point process modeling
--   Change-point detection
--   Thermodynamic interpretation of background flow
--   Formal Radon--Nikodym framing
-
-------------------------------------------------------------------------
 
 ## License
 
