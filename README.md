@@ -67,10 +67,6 @@ For each contiguous support region:
 
 Result: a sparse atomic measure representing structural anomalies.
 
-### 4. DOI
-
-https://doi.org/10.5281/zenodo.18731410
-
 ## License
 
 MIT License
