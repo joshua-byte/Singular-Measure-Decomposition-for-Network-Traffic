@@ -1,4 +1,4 @@
-# Singular Measure Decomposition for Network Traffic
+# Measure-Based Anomaly Detection
 
 A resolution-dependent anomaly detection framework inspired by measure
 decomposition and the Dirac delta distribution.
